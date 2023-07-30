@@ -1,0 +1,24 @@
+  b
+10011 = a
+00100  [1<<(b-1)]
+________
+10011 [a^(1<<(b-1))]//XOR
+
+for long long
+1LL<<b [if b is long long]
+
+
+a^0=a
+a^a=0
+
+a^b=c
+a^c=b
+b^c=a	
+
+! make kth bit SETtoUNSET / UNSETtoSET
+! : XOR with (1<<(k-1))
+!   b
+! 10011 = a
+! 00100  [1<<(b-1)]
+  ________
+! 10111 [a^(1<<(b-1))]//XOR
